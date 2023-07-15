@@ -14,7 +14,19 @@ const botonConsulta = document.querySelector('#botonConsulta')
         method: formulario.getAttribute('method')
     }
 
+    //try catch
+    try {
+        const respuesta = await fetch(url, config);
+        const data = await respuesta.text();
+        alert(data);
+        console.log('Método GET');
+    } catch (error) {
+        alert('Error en la consulta: ' + error);
+    }
+
 }
 
+// Asignar el manejador de eventos al botón de consulta
+    botonConsulta.addEventListener('click', consultarApi);
 
 

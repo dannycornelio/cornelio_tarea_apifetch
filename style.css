@@ -1,0 +1,60 @@
+#encabezado{
+    font-size: 40px;
+    text-align: center;
+    color:#3c8dbc ;
+    background-color: darkgrey;
+    padding:10px;
+    display:flex;
+
+}
+
+#formulario{
+    margin-top:5%;
+    width:60%;
+    height:auto;
+    border:2px solid #ccc;
+    padding:10px;
+    box-shadow: 7px 9px rgba(0,0,0,.1);
+    display:flex;
+    flex-direction:column;  
+    align-items:center;
+    justify-content:space-around;
+    position:relative;
+    top:-5vh;
+    left:calc((100% - 60%) / 2);
+}
+
+#consulta{
+    width:90%;
+    max-width:none!important;
+    min-height:4em;
+    resize:vertical;
+    overflow:hidden;
+    outline: none;
+    transition:.3s ease all;
+    border: 1px solid lightgray;
+    padding: 15px;
+    line-height: normal;
+    letter-spacing: .02em;
+    font-family:'Open Sans', sans-serif;
+    font-weight:bold;
+    font-style:italic;
+    font-size: larger;
+    }
+
+::placeholder {
+    opacity: 1 !important;
+    }
+#botonConsulta{
+    cursor:pointer;
+    background-image: linear-gradient(#f7d2cc,#ffafaa );
+    border:none;
+    color:white;
+    font-size:larger;
+    padding:1.5rem  3rem;
+    text-transform:uppercase;
+    border-radius:8px ;
+    transition:.3s ease all;
+    margin-top: 15px;
+
+}

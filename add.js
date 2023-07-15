@@ -1,2 +1,1 @@
-console.log('conectado')
-alert('conectado')
+const formulario = document.querySelector('form')

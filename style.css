@@ -5,6 +5,8 @@
     background-color: darkgrey;
     padding:10px;
     display:flex;
+    border-radius: 10px;
+    box-shadow: 7px 9px rgba(0,0,0,.1);
 
 }
 
@@ -22,6 +24,7 @@
     position:relative;
     top:-5vh;
     left:calc((100% - 60%) / 2);
+    border-radius: 10px;
 }
 
 #consulta{

@@ -3,15 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>APIFETCH</title>
+  <title>Generador MD5 con Api Fetch</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-  <h1>Consulta y validación</h1>
-  <form id="formulario" method="get">
-    <label for="busqueda">Realizar búsqueda</label>
-    <input type="text" name="busqueda" id="busqueda">
-    <button type="submit" id="botonBuscar">Buscar</button>
-  </form>
-  <script src="add.js"></script>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-12">
+                <h1>Generador MD5 con Api Fetch</h1>
+            </div>
+
+            <div class="col-md-6 mt-4">
+                <textarea rows="5" id="texto" class="form-control"></textarea>
+            </div>
+
+            <div class="col-md-12 mt-2">
+                <button type="button" id="btnGen" class="btn btn-primary">Generar Hash</button>
+            </div>
+
+            <div class="col-md-6 mt-4">
+                <table class="table table-hover table-bordered">
+                    <tr>
+                        <td>Base64: </td>
+                        <td id="base64"></td>
+                    </tr>   
+                    <tr>
+                        <td>MD5: </td>
+                        <td id="md5"></td>
+                    </tr> 
+                    <tr>
+                        <td>SHA256: </td>
+                        <td id="sha256"></td>
+                    </tr> 
+                </table>
+            </div>
+        </div>
+    </div>
+  
+  <script src="app.js"></script>
 </body>
 </html>

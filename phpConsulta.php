@@ -1,7 +1,11 @@
 <?php
-if(count($_GET) > 0){
-    $mensaje = "Esta utilizando el metodo GET";
-}else{
-    $mensaje ="No esta utlizando el metodo GET";
+$metodo = $_SERVER['REQUEST_METHOD'];
+
+if ($metodo === 'POST') {
+  // Realiza acciones específicas para el método GET
+  echo 'El método de búsqueda es GET';
+} else {
+  // Realiza acciones para otros métodos (POST, PUT, DELETE, etc.)
+  echo 'El método de búsqueda no es GET';
 }
 ?>

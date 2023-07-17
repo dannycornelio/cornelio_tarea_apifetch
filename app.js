@@ -5,7 +5,7 @@ async function getData(mensaje) {
   const respuesta = await fetch(`phpConsulta.php?texto=${mensaje}`);
   const config = {
     // aquí se establece el método que utilizaremos para traer los datos
-    method: "GET",
+    method: "POST",
   };
 
   // Validación del método
@@ -20,7 +20,7 @@ async function getData(mensaje) {
   if (data.resultado === true) {
     mostrarData(data);
   } else {
-    alert("Error en la consulta, ingrese una consulta y/o utilice le metodo GET.");
+    alert("Ingrese una consulta.");
   }
 }
 

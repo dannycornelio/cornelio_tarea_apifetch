@@ -5,7 +5,7 @@ async function getData(mensaje) {
   const respuesta = await fetch(`phpConsulta.php?texto=${mensaje}`);
   const config = {
     // aquí se establece el método que utilizaremos para traer los datos
-    method: "POST",
+    method: "GET",
   };
 
   // Validación del método
